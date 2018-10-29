@@ -1,0 +1,14 @@
+git log --oneline
+git checkout <commit vers lequel revenir>
+
+
+Apres installation de Node packet manager,
+installer node lite server
+Dans fichier package.json, ajouter :
+-----------------------
+"scripts": {
+  "start":"npm run lite",
+
+  "lite":"lite-server"
+-------------------------
+  Permet de demarrer le browser avec "npm start"

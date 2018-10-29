@@ -12,3 +12,19 @@ Dans fichier package.json, ajouter :
   "lite":"lite-server"
 -------------------------
   Permet de demarrer le browser avec "npm start"
+
+
+npm install -g @angular/cli@
+pour installer angular CLI
+
+ng help
+pour les commandes angular cli
+
+ng new conFusion --style=scss
+creer l application angular
+
+ng serve
+dans le folder pour lancer
+
+http://localhost:4200/
+adresse locale du server 

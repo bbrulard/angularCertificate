@@ -5,17 +5,27 @@
   'use strict';
 
 //gotta be declared in html head too
-angular.module('myFirstApp', [])
+angular.module('NameCalculator', [])
 
 //var angular avec $
-.controller('myController', function($scope) {
-  $scope.name = "Ben";
-  $scope.sayHello = function () {
-    var x = 2;
-    x += 2;
-    return ("what's 2+2 ? "+ x);
+.controller('NameCalculatorController', function($scope) {
+  $scope.name = "Toasty";
+  $scope.totalValue = 0;
+
+
+  $scope.displayNumeric = function() {
+    var totalValue = calculateNumericForString($scope.name);
+    $scope.totalValue = totalValue;
   };
 
+  function calculateNumericForString(string) {
+    var stringValue = 0;
+    for (var i = 0; i < string.length; i++) {
+      stringValue += string.charCodeAt(i);
+    }
+
+    return stringValue;
+  }
 });
 
 })();

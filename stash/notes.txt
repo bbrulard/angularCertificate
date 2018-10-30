@@ -1,3 +1,6 @@
 
+https://www.coursera.org/learn/single-page-web-apps-with-angularjs/home/welcome
+
+
 // Lancer browser sync en maj direct de la page
 browser-sync start --server --directory --files "**/*"

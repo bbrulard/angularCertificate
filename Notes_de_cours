@@ -27,4 +27,11 @@ ng serve
 dans le folder pour lancer
 
 http://localhost:4200/
-adresse locale du server 
+adresse locale du server
+
+
+----------------------------
+
+
+dans confusion /src / index.html
+-> balise app root ?  =

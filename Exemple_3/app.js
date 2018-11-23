@@ -5,17 +5,28 @@
   'use strict';
 
 //gotta be declared in html head too
-angular.module('myFirstApp', [])
+angular.module('DIApp', [])
 
 //var angular avec $
-.controller('myController', function($scope) {
+.controller('DIController',DIController);
+
+
+function DIController($scope, $filter, $injector) {
   $scope.name = "Ben";
-  $scope.sayHello = function () {
-    var x = 2;
-    x += 2;
-    return ("what's 2+2 ? "+ x);
+
+  $scope.upper = function () {
+    var upCase = $filter("uppercase");
+    $scope.name = upCase($scope.name);
+
   };
 
-});
+  console.log($injector.annotate(DIController));
+}
 
+function AnnonateMe(name, job, blah0 {
+  return "Blah !";
+}
+
+console.log(DIController.toString());
+})
 })();
